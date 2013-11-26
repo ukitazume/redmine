@@ -28,6 +28,7 @@ platforms :mri, :mingw do
 end
 
 gem "mysql2", "~> 0.3.11"
+gem 'unicorn'
 group :development do
   gem "rdoc", ">= 2.4.2"
   gem "yard"
