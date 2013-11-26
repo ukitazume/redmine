@@ -3,15 +3,8 @@
 /.powrc
 /.rvmrc
 /config/additional_environment.rb
-/config/configuration.yml
-/config/database.yml
 /config/email.yml
-/config/initializers/session_store.rb
-/config/initializers/secret_token.rb
 /coverage
-/db/*.db
-/db/*.sqlite3
-/db/schema.rb
 /files/*
 /lib/redmine/scm/adapters/mercurial/redminehelper.pyc
 /lib/redmine/scm/adapters/mercurial/redminehelper.pyo
@@ -36,7 +29,4 @@
 /vendor/rails
 *.rbc
 
-/.bundle
-/Gemfile.lock
-/Gemfile.local
 
