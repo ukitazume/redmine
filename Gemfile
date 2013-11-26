@@ -27,12 +27,6 @@ platforms :mri, :mingw do
   end
 end
 
-platforms :jruby do
-  # jruby-openssl is bundled with JRuby 1.7.0
-  gem "jruby-openssl" if Object.const_defined?(:JRUBY_VERSION) && JRUBY_VERSION < '1.7.0'
-  gem "activerecord-jdbc-adapter", "~> 1.2.6"
-end
-
 # Include database gems for the adapters found in the database
 # configuration file
 require 'erb'
@@ -45,7 +39,6 @@ if File.exist?(database_file)
     adapters.each do |adapter|
       case adapter
       when 'mysql2'
-        gem "mysql2", "~> 0.3.11", :platforms => [:mri, :mingw]
         gem "activerecord-jdbcmysql-adapter", :platforms => :jruby
       when 'mysql'
         gem "mysql", "~> 2.8.1", :platforms => [:mri, :mingw]
