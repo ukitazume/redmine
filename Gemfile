@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem "rails", "3.2.13"
-gem "jquery-rails", "~> 2.0.2"
+gem "rails", "4.0.0"
+gem "jquery-rails", "~> 2.0.3"
 gem "coderay", "~> 1.1.0"
 gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", "3.0.0"
@@ -30,7 +30,7 @@ end
 gem "mysql2", "~> 0.3.11"
 gem 'unicorn'
 group :development do
-  gem "rdoc", ">= 2.4.2"
+  gem "rdoc", ">= 4.3.0"
   gem "yard"
 end
 
